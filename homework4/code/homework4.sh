@@ -151,7 +151,7 @@ for url in "${URLS[@]}"; do
         ## so that you know that the move will happen after them message is shown
         ## Hints: Read Tutorial 4 slides 48-56 and do exercises 4.13-4.15. Use the exit values
         ## described in slides 45-47, review Tutorial 1 to learn how to move files.
-        if file "$CURRENTINPUTFILE" | grep -q "PDF"; then
+        
             # then output message
             echo "File $CURRENTINPUTFILE is a PDF, Moving to directory PDF..."
             mv "$CURRENTINPUTFILE" "PDF/$CURRENTINPUTFILE.pdf"
